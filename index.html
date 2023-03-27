@@ -14,9 +14,9 @@
     <h1 #main></h1>
 
     <script>
-        const main = document.querySelector('#main');
+        const weeks = Math.floor((new Date() - new Date(2022, 6, 21, 6, 6, 0)) / 60 / 60 / 24 % 7);
 
-        main.innerHTML = 'hi';
+        document.querySelector('#main').innerHTML = weeks;
     </script>
 </body>
 
