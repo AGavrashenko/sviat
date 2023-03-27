@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <h1 #main></h1>
+    <h1 id="#main"></h1>
 
     <script>
-        const weeks = Math.floor((new Date() - new Date(2022, 6, 21, 6, 6, 0)) / 60 / 60 / 24 % 7);
+        const weeks = Math.floor((new Date() - new Date(2022, 6, 21, 6, 6, 0)) / 1000 / 60 / 60 / 24 / 7);
 
         document.querySelector('#main').innerHTML = weeks;
     </script>
